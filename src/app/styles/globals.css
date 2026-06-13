@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 240 5% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 5% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 5% 4%;
+    --primary: 240 5% 4%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 14% 96%;
+    --secondary-foreground: 240 5% 4%;
+    --muted: 240 14% 96%;
+    --muted-foreground: 240 5% 46%;
+    --accent: 240 14% 96%;
+    --accent-foreground: 240 5% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 5% 92%;
+    --input: 240 5% 92%;
+    --ring: 240 5% 65%;
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
+    --card: 240 6% 7%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 6% 7%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 10% 4%;
+    --secondary: 240 5% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 5% 12%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 240 5% 12%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 94% 82%;
+    --border: 240 5% 15%;
+    --input: 240 5% 15%;
+    --ring: 240 5% 34%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+
+  html {
+    font-family: "Manrope", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 99px;
+  transition: opacity 0.2s;
+}
+:hover::-webkit-scrollbar-thumb { background: hsl(var(--muted-foreground)); }
