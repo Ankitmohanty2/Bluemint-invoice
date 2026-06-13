@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { 
     opacity: 0,
     y: 30
@@ -21,7 +21,7 @@ const containerVariants = {
   }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { 
     opacity: 0,
     y: 20
@@ -36,7 +36,7 @@ const itemVariants = {
   }
 };
 
-const numberVariants = {
+const numberVariants: Variants = {
   hidden: (direction: number) => ({
     opacity: 0,
     x: direction * 40,
@@ -55,7 +55,7 @@ const numberVariants = {
   }
 };
 
-const ghostVariants = {
+const ghostVariants: Variants = {
   hidden: { 
     scale: 0.8,
     opacity: 0,
