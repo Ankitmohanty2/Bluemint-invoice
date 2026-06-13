@@ -75,7 +75,7 @@ export function Solutions() {
         </div>
 
         {/* Center Grid */}
-        <div className="grid grid-cols-2 gap-4 flex-[2]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-[2]">
           <div className="bg-muted/30 border border-border rounded-3xl p-5 flex flex-col justify-between">
             <div className="flex justify-between items-start mb-4">
               <div className="flex items-center gap-2">
@@ -234,9 +234,9 @@ export function Solutions() {
         <div className="md:w-1/2 w-full">
           <div className="bg-gradient-to-br from-blue-100 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/10 rounded-3xl p-8 border border-border shadow-lg relative overflow-hidden aspect-square md:aspect-auto md:h-[500px]">
              {/* Mockup elements floating */}
-             <div className="absolute top-10 right-10 bg-card rounded-2xl p-4 shadow-xl border border-border w-64 transform rotate-6">
+             <div className="absolute top-4 sm:top-10 right-2 sm:right-10 bg-card rounded-2xl p-4 shadow-xl border border-border w-56 sm:w-64 transform rotate-6">
                <div className="flex items-center gap-3 mb-3">
-                 <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">INV</div>
+                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xs sm:text-sm">INV</div>
                  <div>
                    <p className="text-sm font-bold">Invoice #001</p>
                    <p className="text-xs text-muted-foreground">Sent successfully</p>
@@ -247,9 +247,9 @@ export function Solutions() {
                </div>
              </div>
              
-             <div className="absolute bottom-10 left-10 bg-card rounded-2xl p-4 shadow-xl border border-border w-56 transform -rotate-3">
+             <div className="absolute bottom-4 sm:bottom-10 left-2 sm:left-10 bg-card rounded-2xl p-4 shadow-xl border border-border w-48 sm:w-56 transform -rotate-3">
                <p className="text-xs text-muted-foreground mb-1">Total Received</p>
-               <p className="text-2xl font-bold">$4,200.00</p>
+               <p className="text-xl sm:text-2xl font-bold">$4,200.00</p>
              </div>
           </div>
         </div>
@@ -286,8 +286,8 @@ export function Solutions() {
         <div className="md:w-1/2 w-full">
           <div className="bg-gradient-to-br from-emerald-100 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/10 rounded-3xl p-8 border border-border shadow-lg relative overflow-hidden aspect-square md:aspect-auto md:h-[500px]">
              {/* Mockup elements floating */}
-             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-2xl p-6 shadow-xl border border-border w-72">
-               <div className="flex justify-between items-center mb-6 pb-4 border-b border-border">
+             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-2xl p-5 sm:p-6 shadow-xl border border-border w-64 sm:w-72">
+               <div className="flex justify-between items-center mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-border">
                  <div className="w-8 h-8 bg-foreground rounded-md" />
                  <span className="text-xs font-bold bg-emerald-100 text-emerald-600 px-2 py-1 rounded">PAID</span>
                </div>
