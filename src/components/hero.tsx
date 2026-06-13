@@ -134,14 +134,14 @@ export default function Hero() {
                   <h3 className="text-xl font-bold text-foreground">Binford Ltd.</h3>
                 </div>
                 <div className="bg-muted p-2 rounded-lg border border-border">
-                   <div className="text-sm font-medium text-foreground">€ Euro <span className="text-muted-foreground mx-2">-></span> Polygon</div>
+                   <div className="text-sm font-medium text-foreground">€ Euro <span className="text-muted-foreground mx-2">&rarr;</span> Polygon</div>
                 </div>
              </div>
              
              <div className="flex justify-between items-center">
                 <p className="text-xs text-muted-foreground">67 boulevard Aristide Briand<br/>Le Bouscat, France</p>
                 <div className="bg-muted p-2 rounded-lg border border-border">
-                   <div className="text-sm font-medium text-foreground">$ USD <span className="text-muted-foreground mx-2">-></span> Tron</div>
+                   <div className="text-sm font-medium text-foreground">$ USD <span className="text-muted-foreground mx-2">&rarr;</span> Tron</div>
                 </div>
              </div>
            </div>
